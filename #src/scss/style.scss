@@ -7,7 +7,53 @@
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-@import "fonts";
+// @import "fonts";
+
+@font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Thin.eot");
+	src: local("☺"), url("../fonts/TTFirsNeue-Thin.woff") format("woff"), url("../fonts/TTFirsNeue-Thin.ttf") format("truetype"),
+		url("../fonts/TTFirsNeue-Thin.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Light.eot");
+	src: local("☺"), url("../fonts/TTFirsNeue-Light.woff") format("woff"), url("../fonts/TTFirsNeue-Light.ttf") format("truetype"),
+		url("../fonts/TTFirsNeue-Light.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Regular.eot");
+	src: local("☺"), url("../fonts/TTFirsNeue-Regular.woff") format("woff"), url("../fonts/TTFirsNeue-Regular.ttf") format("truetype"),
+		url("../fonts/TTFirsNeue-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Medium.eot");
+	src: local("☺"), url("../fonts/TTFirsNeue-Medium.woff") format("woff"), url("../fonts/TTFirsNeue-Medium.ttf") format("truetype"),
+		url("../fonts/TTFirsNeue-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-ExtraBold.eot");
+	src: local("☺"), url("../fonts/TTFirsNeue-ExtraBold.woff") format("woff"), url("../fonts/TTFirsNeue-ExtraBold.ttf") format("truetype"),
+		url("../fonts/TTFirsNeue-ExtraBold.svg") format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -15,8 +61,8 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "";
-$fontSize: 16;
+$fontFamily: "TTFirsNeue", sans-serif;
+$fontSize: 20;
 $fontWeight: 400;
 //</Шрифт по умолчанию>==========================================================================================
 
@@ -31,7 +77,8 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$mainColor: #000;
+$mainColor: #939393;
+;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -44,8 +91,9 @@ body {
 	// background: #333;
 
 	a {
-		font-family: "Lato";
-		color: #1a1818;
+		font-family: "TTFirsNeue", sans-serif;
+		color: #000;
+		font-weight: 400;
 	}
 
 	&._lock {
@@ -58,16 +106,15 @@ body {
 
 //<ЗАГОЛОВКИ>=================================================================================================================
 h1 {
-	font-size: 35px;
+	font-size: 46px;
 	font-weight: 500;
-	line-height: 52.8 / 40 *100%;
-	line-height: 38px;
+	line-height: 59 / 46 *100%;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 500;
-	line-height: 38px;
+	line-height: 46 / 36 *100%;
 }
 
 h3 {
@@ -84,8 +131,8 @@ h4 {
 
 .title {
 	text-align: center;
-	color: #222222;
-	margin-bottom: 38px;
+	color: #000;
+	margin-bottom: 35px;
 }
 
 @media (max-width: 768px) {
@@ -172,7 +219,109 @@ h4 {
 
 //===================================================================================================================================
 
+.about {
+	padding: 112px 0 60px 0;
+	background-position: 90% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url('../img/about-bg.jpg');
+}
 
+.about__title {
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.about__subtitle {
+	line-height: 26px;
+}
+
+.about__link {
+	margin-top: 70px;
+}
+
+//========================================================================================================================================================
+
+.service {
+	padding: 60px 0 100px 0;
+}
+
+.service__inner {
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.service__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	width: 288px;
+	height: 288px;
+	overflow: hidden;
+}
+
+.service__column {
+	flex: 0 1 43%;
+}
+
+.service__text {
+	line-height: 26px;
+
+	span {
+		color: #000;
+		font-weight: 600;
+	}
+}
+
+//========================================================================================================================================================
+
+.benefits {
+	padding: 80px 0;
+	background: #F8F8F8;
+}
+
+.benefits__title {}
+
+.benefits__inner {}
+
+.benefits__column {}
+
+//========================================================================================================================================================
+
+.consult {
+	padding: 117px 0 137px 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/consult.jpg');
+}
+
+.consult ._container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.consult__text {
+	max-width: 809px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+
+	span {
+		font-weight: 600;
+		color: #000;
+	}
+}
+
+.consult__link {
+	margin-top: 20px;
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 

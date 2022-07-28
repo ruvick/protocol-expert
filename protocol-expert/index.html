@@ -25,105 +25,108 @@
 
 		<div class="header__row d-flex">
 
-			<a href="index.html" class="logo-icon header__logo">
-				<!-- <? bloginfo("url"); ?> -->
-				<p class="logo-icon__text">Название <span>текст logo</span></p>
-			</a>
+			<a href="index.html" class="logo-icon header__logo"></a>
 
-			<div class="header__navigation">
-				<div class="header__menu-block"> 
-					<ul class="menu-list header__menu-list d-flex"> 
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 1</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 2</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 3</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 4</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 5</a></li>
-					</ul>
-					<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
+			<ul class="menu-list header__menu-list d-flex">
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Возможности сервиса</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Как работает сервис</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Тарифы</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Бесплатная версия</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">ЧаВо</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Написать нам</a></li>
+				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+			</ul>
 
-						<div class="search header__search">
-							<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-								<input type="text" placeholder="Поиск" class="search__input input"
-								value="<?php echo get_search_query() ?>" name="s" id="s">
-								<button type="submit" tabindex="2" value="" id="searchsubmit" class="search__btn"></button>
-							</form>
-						</div>
-					</div>
-					<button class="mob-search-btn header__mob-search-btn"></button>
-
-					<div class="contacts header__contacts d-flex">
-						<a href="tel:84951700000" class="contacts__phone header__phone">8 (495) 170-00-00</a>
-						<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-						<p class="contacts__time-phone header__time-phone">Звонить с 08:00 до 22:00</p>
-						<a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-					</div>
-					<a href="tel:84951700000" class="mob-phone-icon header__mob-phone-icon"></a>
-					<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
-
-					<a href="#" class="bascket-icon"><span class="bascket-icon__number bascet_counter">1</span></a>
-
-					<div class="icon-menu" aria-label="Бургер меню"> 
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
+			<div class="icon-menu" aria-label="Бургер меню">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 
 		</div>
-		<!-- Полоса прокрутки в шапке -->
-		<div id="scroll-progress"></div>
-	</header>
+</header>
 
-	<!-- Мобильное меню -->
-	<div class="mob-menu header__mob-menu">
-		<ul class="mob-menu__list">
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li> 
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
-		</ul>
+<!-- Мобильное меню -->
+<div class="mob-menu header__mob-menu">
+	<ul class="mob-menu__list">
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
+	</ul>
 	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
 		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-		<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-	</div>
-
-	<!-- Строка мобильного поиска -->
-	<div class="search header__search-mob">
-		<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-			<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
-			id="s">
-			<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
-		</form>
-	</div>
+	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+</div>
 		<main class="page">
 
 			
 
 			<section id="about" class="about">
 				<div class="_container">
+					<h1 class="about__title">
+						PROtocol-Expert — <br>
+						cервис пакетной выгрузки <br>
+						протоколов испытаний
+					</h1>
+					<p class="about__subtitle">
+						Проводите выгрузку протоколов испытаний во ФГИС 2.0 <br>
+						Росаккредитации из ПК Аттестация, с атрибутами и сканами <br>
+						образцов. Быстрая пакетная загрузка через сервис <br>
+						PROtocol-Expert экономит время и корпоративные ресурсы.
+					</p>
+					<a href="#callback" class="about__link btn _popup-link">ПОПРОБОВАТЬ БЕСПЛАТНО</a>
+				</div>
+			</section>
+
+			<section id="service" class="service">
+				<div class="_container">
+					<div class="service__inner">
+						<div class="service__img">
+							<img src="img/about-service.jpg" alt="">
+						</div>
+						<div class="service__column">
+							<p class="service__text">
+								Сервис пакетной выгрузки <span>PROtocol-Expert</span> разработан специально для тех компаний и
+								лабораторий, которые
+								проводят работу с протоколами испытаний различного образца
+								по СОУТ. Система находит ошибки и выгружает информацию в базу данных ФГИС 2.0 в соответствующем формате.
+							</p>
+						</div>
+						<div class="service__column">
+							<p class="service__text">
+								Разработчиком данного сервиса является компания <span>ООО «Битроникс24»</span>. 15 лет опыта в сфере
+								проведения
+								лабораторных испытаний по СОУТ дали важные практические навыки для создания «мощного» помощника —
+								PROtocol-Expert, который упрощает, ускоряет и избавляет персонал от рутинной работы.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="benefits" class="benefits">
+				<div class="_container">
+					<h2 class="benefits__title title">Преимущества сервиса PROtocol-Expert</h2>
+
+					<div class="benefits__inner">
+						<div class="benefits__column">
+
+						</div>
+					</div>
 
 				</div>
 			</section>
 
-			<section id="about" class="about">
+			<section id="consult" class="consult">
 				<div class="_container">
-
-				</div>
-			</section>
-
-			<section id="about" class="about">
-				<div class="_container">
-
-				</div>
-			</section> 
-
-			<section id="about" class="about">
-				<div class="_container">
-
+					<div class="consult__text">
+						ТРАТИТЕ МНОГО ВРЕМЕНИ НА ЗАПОЛНЕНИЕ ФОРМ ДЛЯ ВЫГРУЗКИ ПРОТОКОЛОВ ИСПЫТАНИЙ?
+						<span>СЕРВИС PROTOCOL-EXPERT СДЕЛАЕТ ВСЁ ЗА ВАС — БЫСТРО И БЕЗ ОШИБОК.</span> <br>
+						ТАКОЙ ПОДХОД ЭКОНОМИТ ДО 50 ТРУДОЧАСОВ В МЕСЯЦ ДЛЯ ВАШЕГО ПЕРСОНАЛА
+					</div>
+					<a href="#callback" class="consult__link btn _popup-link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ЭКСПЕРТА</a>
 				</div>
 			</section>
 
