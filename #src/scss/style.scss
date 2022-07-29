@@ -220,11 +220,17 @@ h4 {
 //===================================================================================================================================
 
 .about {
+	position: relative;
 	padding: 112px 0 60px 0;
 	background-position: 90% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image: url('../img/about-bg.jpg');
+}
+
+.about ._container {
+	position: relative;
+	z-index: 10;
 }
 
 .about__title {
@@ -238,6 +244,10 @@ h4 {
 
 .about__link {
 	margin-top: 70px;
+}
+
+.about__nuar_blk {
+	display: none;
 }
 
 //========================================================================================================================================================
@@ -438,10 +448,11 @@ h4 {
 	}
 
 	span {
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		flex: 0 0 30px;
 		width: 30px;
 		height: 30px;
 		font-weight: 600;
