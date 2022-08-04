@@ -11,7 +11,7 @@ if (
     
     ) {
         http_response_code(403);
-        die($_SERVER["HTTP_ORIGIN"]); 
+        die($_SERVER["HTTP_ORIGIN"]);   
     }
 
 
