@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html',{
-"title":"Главная"
-})
+<head>
+	<title>Страница благодарности</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/fancybox.css"> -->
+	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
+	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
+	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
+	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('_header.html',{})
+		<header id="header" class="header">
+	<div class="header__container _container">
+
+		<div class="header__row d-flex">
+
+			<a href="index.html" class="logo-icon header__logo"></a>
+
+			<div class="header__navigation">
+
+				<div class="header__contacts">
+					<a href="#" class="header__contacts-subscription-link subscription-link"></a>
+					<a href="tel:84712550585" class="header__contacts-phone">8 (4712) 550-585</a>
+				</div>
+
+				<ul class="menu-list header__menu-list d-flex">
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Возможности сервиса</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Как работает сервис</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Тарифы</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Бесплатная версия</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">ЧаВо</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Написать нам</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+				</ul>
+
+			</div>
+
+			<div class="icon-menu" aria-label="Бургер меню">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+		</div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mob-menu header__mob-menu">
+	<ul class="mob-menu__list">
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Возможности сервиса</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Как работает сервис</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Тарифы</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Бесплатная версия</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Написать нам</a></li>
+		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
+	</ul>
+	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+</div>
 		<main class="page">
 
-			<!-- @@include('_slider-index.html',{}) -->
+			
 
 			<section id="about" class="about">
 				<div class="about__nuar_blk nuar_blk"></div>
 				<div class="_container">
 					<h1 class="about__title">
-						PROtocol-Expert — <br>
-						cервис пакетной выгрузки <br>
-						протоколов испытаний
+						Благодарим вас за обращение!
 					</h1>
 					<p class="about__subtitle">
-						Проводите выгрузку протоколов испытаний во ФГИС 2.0 <br>
-						Росаккредитации из ПК Аттестация, с атрибутами и сканами <br>
-						образцов. Быстрая пакетная загрузка через сервис <br>
-						PROtocol-Expert экономит время и корпоративные ресурсы.
+						Наши менеджеры <br> свяжутся с вами <br> в ближайшее время
 					</p>
 					<a href="#callback" class="about__link btn _popup-link">ПОПРОБОВАТЬ БЕСПЛАТНО</a>
-				</div>
-			</section>
-
-			<section id="service" class="service">
-				<div class="_container">
-					<div class="service__inner">
-						<div class="service__img">
-							<img src="img/about-service.jpg" alt="">
-						</div>
-						<div class="service__column">
-							<p class="service__text">
-								Сервис пакетной выгрузки <span>PROtocol-Expert</span> разработан специально для тех компаний и
-								лабораторий, которые
-								проводят работу с протоколами испытаний различного образца
-								по СОУТ. Система находит ошибки и выгружает информацию в базу данных ФГИС 2.0 в соответствующем формате.
-							</p>
-						</div>
-						<div class="service__column">
-							<p class="service__text">
-								Разработчиком данного сервиса является компания <span>ООО «Битроникс24»</span>. 15 лет опыта в сфере
-								проведения
-								лабораторных испытаний по СОУТ дали важные практические навыки для создания «мощного» помощника —
-								PROtocol-Expert, который упрощает, ускоряет и избавляет персонал от рутинной работы.
-							</p>
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -107,18 +136,6 @@
 
 					</div>
 
-				</div>
-			</section>
-
-			<section id="consult" class="consult">
-				<div class="consult__nuar_blk nuar_blk"></div>
-				<div class="_container">
-					<div class="consult__text">
-						ТРАТИТЕ МНОГО ВРЕМЕНИ НА ЗАПОЛНЕНИЕ ФОРМ ДЛЯ ВЫГРУЗКИ ПРОТОКОЛОВ ИСПЫТАНИЙ?
-						<span>СЕРВИС PROTOCOL-EXPERT СДЕЛАЕТ ВСЁ ЗА ВАС — БЫСТРО И БЕЗ ОШИБОК.</span> <br>
-						ТАКОЙ ПОДХОД ЭКОНОМИТ ДО 50 ТРУДОЧАСОВ В МЕСЯЦ ДЛЯ ВАШЕГО ПЕРСОНАЛА
-					</div>
-					<a href="#callback" class="consult__link btn _popup-link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ЭКСПЕРТА</a>
 				</div>
 			</section>
 
@@ -362,45 +379,137 @@
 				</div>
 			</section>
 
-			<section id="request" class="request">
-				<div class="_container">
-					<h2 class="request__title title">Остались вопросы? Свяжемся с вами через 10 минут</h2>
-
-					<form action="#" class="request__form" id="form_in_foot">
-
-						<div class="request__form-inner">
-							<div class="request__form-column">
-								<input type="text" name="name" data-value="Имя" class="request__form-column-input input">
-
-								<input type="text" name="mail" data-value="E-mail*" class="request__form-column-input input _email">
-							</div>
-
-							<div class="request__form-column">
-								<textarea name="message" class="request__form-column-textarea input" data-value="Сообщение" cols="30"
-									rows="10"></textarea>
-							</div>
-						</div>
-
-						<button type="submit" class="request__form-btn form__btn btn _send_btn" data-formid="form_in_foot"
-							data-msg="Заявка на консультацию">ОТПРАВИТЬ
-							СООБЩЕНИЕ</button>
-
-						<p class="request__form-policy">
-							Нажимая на кнопку, вы даете согласие на обработку персональных данных <br>
-							и соглашаетесь c <a href="#">политикой конфиденциальности</a>
-						</p>
-
-					</form>
-
-				</div>
-			</section>
-
-
 		</main>
-		@@include('_footer.html',{})
+		<footer id="footer" class="footer">
+	<div class="footer__container _container">
+
+		<div class="footer__title title">Контакты</div>
+
+		<div class="footer__row d-flex">
+
+			<div class="footer__column">
+				<p class="footer__name-org">
+					Общество с ограниченной <br>
+					ответственностью «Консалтинг» <br>
+					ИНН 5951899282
+				</p>
+			</div>
+
+			<div class="footer__column">
+				<p class="footer__phone">Телефон: <a href="tel:+74996480564">+7 499 648 05 64</a></p>
+				<p class="footer__email">E-mail: <a href="mailto:admin@load2fgis.com">admin@load2fgis.com</a></p>
+			</div>
+
+			<div class="footer__column">
+				<p class="footer__subscription">Подписывайтесь на нашу телеграм-группу: <a href="#"
+						class="footer__subscription-link subscription-link"></a></p>
+			</div>
+
+		</div>
+
 	</div>
-	@@include('_popup.html',{})
-	@@include('_js.html',{})
+</footer>
+	</div>
+	<!-- Popup-с формой -->
+<div class="popup popup_callback">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+			<div class="popup__item d-flex">
+				<div class="popup__img">
+					<img src="img/popup.jpg" alt="">
+				</div>
+				<div class="popup__form-block">
+					<h2>Заявка на расчет</h2>
+					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
+					<form action="#" class="form" id="form_in_foot_callback">
+						<div class="form__line">
+							<input type="text" name="name" data-value="Имя" class="popup__form-input input">
+							<input type="text" name="phone" data-value="Телефон*" class="popup__form-input input _phone">
+							<input type="text" name="mail" data-value="Email" class="popup__form-input input _email">
+						</div>
+						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
+								конфиденциальности</a></p>
+						<button type="submit" class="popup__form-btn form__btn btn _send_btn_callback"
+							data-formid="form_in_foot_callback" data-msg="Заявка на обратный звонок">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
+<!-- =============================================================================================================================== -->
+
+
+<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+		</div>
+	</div>
+</div>
+<!-- =============================================================================================================================== -->
+
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
+		</div>
+	</div>
+</div>
+<!-- =============================================================================================================================== -->
+
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
+<!-- =============================================================================================================================== -->
+
+<!-- Popup-CSS -->
+<!-- <div id="popup-2" class="popup-2">
+	<a href="#" class="popup__area-2"></a>
+	<div class="popup__body-2">
+		<div class="popup__content-2">
+
+			<a href="#" class="popup__close-2">Close</a>
+			<div class="popup__title">Заказать ворота Дешево!</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+			<div class="popup__text">
+				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
+				Алютех и REHAU и Авелор
+			</div>
+
+		</div>
+	</div>
+</div> -->
+<!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->
+	<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
