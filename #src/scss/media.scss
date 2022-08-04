@@ -82,33 +82,6 @@
 		display: none;
 	}
 
-	.header__search form {
-		max-height: 30px;
-	}
-
-	.header__contacts {
-		flex: 0 0 133px;
-		margin-left: auto;
-		margin-right: 15px;
-	}
-
-	.header__phone {
-		font-size: 18px;
-	}
-
-	.header__time-phone {
-		display: none;
-	}
-
-	.header__popup-link {
-		display: none;
-	}
-
-	.header__popup-link_mob {
-		display: flex;
-		margin-left: 0;
-	}
-
 	section {
 		padding: 20px 0 !important;
 	}
@@ -318,6 +291,15 @@
 	.about__subtitle {
 		color: #000;
 	}
+
+	.header__contacts {
+		margin-bottom: 0;
+	}
+
+	.header__navigation {
+		margin-left: auto;
+		margin-right: 20px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -357,9 +339,6 @@
 }
 
 @media (max-width: 515px) {
-	.header__contacts {
-		display: none;
-	}
 
 	.header__mob-phone-icon {
 		display: flex;
@@ -412,6 +391,23 @@
 
 	.benefits__card {
 		flex: 0 1 100%;
+	}
+
+	.header__contacts-phone {
+		font-size: 14px;
+		margin-top: 3px;
+	}
+
+	.header__contacts-subscription-link {
+		width: 25px !important;
+		height: 25px !important;
+		margin-right: 10px;
+	}
+
+	.header__contacts-subscription-link::before {
+		flex: 0 0 15px !important;
+		width: 15px !important;
+		height: 13px !important;
 	}
 }
 
