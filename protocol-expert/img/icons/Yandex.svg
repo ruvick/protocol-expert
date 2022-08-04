@@ -1,11 +1,1 @@
-<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.875 15C30.875 23.2842 24.1592 30 15.875 30C7.59078 30 0.875 23.2842 0.875 15C0.875 6.71578 7.59078 0 15.875 0C24.1592 0 30.875 6.71578 30.875 15Z" fill="url(#paint0_linear_404_184)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.1484 15C30.1484 22.8829 23.7579 29.2734 15.875 29.2734C7.99201 29.2734 1.60156 22.8829 1.60156 15C1.60156 7.11701 7.99201 0.726562 15.875 0.726562C23.7579 0.726562 30.1484 7.11701 30.1484 15Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25.531 8.81252L17.5037 16.6641V26.4258C17.5037 26.6016 16.742 26.7422 15.8748 26.7539C15.0427 26.7422 14.2458 26.6016 14.2458 26.4258V16.6641L6.21852 8.81252C6.0896 8.6836 6.49977 8.07422 7.13258 7.44141C7.7654 6.8086 8.38647 6.39846 8.50366 6.52735L15.863 13.711L23.2224 6.52735C23.3513 6.39846 23.9607 6.8086 24.5935 7.44141C25.2263 8.07422 25.6482 8.6836 25.531 8.81252Z" fill="#EC1C24"/>
-<defs>
-<linearGradient id="paint0_linear_404_184" x1="15.875" y1="0" x2="15.875" y2="30" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F5F5F6"/>
-<stop offset="1" stop-color="#EDEDEE"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M30.875 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15z" fill="url(#paint0_linear_404_184)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.148 15c0 7.883-6.39 14.273-14.273 14.273S1.602 22.883 1.602 15 7.992.727 15.875.727 30.148 7.117 30.148 15z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.531 8.813l-8.027 7.851v9.762c0 .176-.762.316-1.63.328-.831-.012-1.628-.152-1.628-.328v-9.762L6.219 8.813c-.13-.13.28-.739.914-1.372.632-.632 1.253-1.043 1.37-.914l7.36 7.184 7.36-7.184c.128-.129.738.282 1.37.914.633.633 1.055 1.243.938 1.372z" fill="#EC1C24"/><defs><linearGradient id="paint0_linear_404_184" x1="15.875" y1="0" x2="15.875" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F6"/><stop offset="1" stop-color="#EDEDEE"/></linearGradient></defs></svg>
