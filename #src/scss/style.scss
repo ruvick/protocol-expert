@@ -387,11 +387,16 @@ h4 {
 //========================================================================================================================================================
 
 .consult {
+	position: relative;
 	padding: 117px 0 137px 0;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('../img/consult.jpg');
+}
+
+.consult__nuar_blk {
+	display: none;
 }
 
 .consult ._container {

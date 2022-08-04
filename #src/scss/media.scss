@@ -416,26 +416,32 @@
 }
 
 @media (max-width: 480px) {
-	.header__search {
-		display: none;
+	.about {
+		background-image: none;
 	}
 
-	.header__mob-search-btn {
-		display: flex;
+	.about__nuar_blk {
+		background-color: #00000090;
 	}
 
-	.header__search.active {
+	.about__title,
+	.about__subtitle {
+		color: #fff;
+	}
+
+	.consult {
+		background-image: none;
+	}
+
+	.consult__nuar_blk {
 		display: block;
-		position: absolute;
-		top: 50px;
-		left: 0;
-		max-width: 100%;
-		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-		margin: 0;
+		background-color: #00000090;
 	}
 
-	.search__input {
-		border-radius: 0 !important;
+	.consult ._container {
+		position: relative;
+		z-index: 5;
+		color: #fff;
 	}
 }
 
